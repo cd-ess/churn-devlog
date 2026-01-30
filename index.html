@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>CHURN: EXO-TERMINATORS</title>
   <meta name="description" content="Official home base for CHURN: EXO-TERMINATORS. Devlog, updates, and links." />
-
-  <!-- Project-page safe: NO leading slash -->
   <link rel="stylesheet" href="styles.css" />
   <script defer src="site.js"></script>
 </head>
@@ -14,55 +12,40 @@
 <body>
   <a class="skip" href="#content">Skip to content</a>
 
-  <header class="top">
-    <div class="container top__row">
-      <nav class="top__nav" aria-label="Primary">
-        <a class="top__link" href="./">Home</a>
-        <a class="top__link" href="blog/">Blog</a>
-        <a class="top__link" href="#links">Links</a>
-      </nav>
-
-      <div class="top__meta">
-        <span class="top__badge">BUILD: Prototype</span>
-        <span class="top__badge">UPDATED: <span data-updated>—</span></span>
-      </div>
-    </div>
-  </header>
-
   <main class="container" id="content">
     <!-- HERO -->
     <section class="hero">
-      <!-- Swap this for an image later if you want:
-           <img class="hero__logoimg" src="assets/logo.png" alt="CHURN: EXO-TERMINATORS" />
-      -->
-      <div class="hero__logo">
-        <div class="hero__mark" aria-hidden="true"></div>
-        <div class="hero__text">
-          <div class="hero__title">CHURN</div>
-          <div class="hero__subtitle">EXO-TERMINATORS</div>
+      <div class="logoBox" aria-label="CHURN: EXO-TERMINATORS">
+        <div class="logoRow">
+          <span class="logoMark" aria-hidden="true"></span>
+          <div class="logoText">
+            <div class="logoTitle">CHURN</div>
+            <div class="logoSub">EXO-TERMINATORS</div>
+          </div>
         </div>
       </div>
 
-      <a class="btn btn--big btn--primary" href="#" target="_blank" rel="noreferrer">
+      <a class="btn btn--primary btn--big" href="#" target="_blank" rel="noreferrer">
         WISHLIST NOW
       </a>
 
-      <div class="hero__fine">
+      <div class="fine">
         Disposable clones. Portal cleanse missions. Saturday-morning monster energy. Short runs. Loud personality.
+      </div>
+
+      <div class="metaLine">
+        BUILD: <strong>Prototype</strong> · UPDATED: <strong><span data-updated>—</span></strong>
       </div>
     </section>
 
-    <!-- 3-COLUMN GRID -->
+    <!-- 3 PANELS -->
     <section class="grid" aria-label="Main panels">
-      <!-- LEFT: DESCRIPTION -->
+      <!-- LEFT -->
       <article class="win">
-        <header class="win__bar">
-          <div class="win__title">GAME FILE</div>
-          <div class="win__btns" aria-hidden="true">
-            <span class="wbtn"></span><span class="wbtn"></span><span class="wbtn wbtn--hot"></span>
-          </div>
+        <header class="bar">
+          <div class="barTitle">GAME FILE</div>
         </header>
-        <div class="win__body">
+        <div class="body">
           <p class="lead">
             You’re a disposable clone deployed into a hostile “other realm” to cleanse the area.
             Fast, punchy FPS combat with a retro action-cartoon coat of paint.
@@ -71,59 +54,55 @@
           <div class="hr"></div>
 
           <div class="kv">
-            <div class="kv__row"><span class="kv__k">Tone</span><span class="kv__v">Deadpan corporate + monster mayhem</span></div>
-            <div class="kv__row"><span class="kv__k">Format</span><span class="kv__v">Short runs / tight loops</span></div>
-            <div class="kv__row"><span class="kv__k">Goal</span><span class="kv__v">Always fun. Never stale.</span></div>
+            <div class="kvRow"><span class="k">Tone</span><span class="v">Deadpan corporate + monster mayhem</span></div>
+            <div class="kvRow"><span class="k">Format</span><span class="v">Short runs / tight loops</span></div>
+            <div class="kvRow"><span class="k">Goal</span><span class="v">Always fun. Never stale.</span></div>
           </div>
 
           <div class="callout">
-            <div class="callout__title">DEVLOG RULE</div>
-            <div class="callout__text">Player-visible updates: what changed, what’s fun now, what’s next.</div>
+            <div class="calloutTitle">DEVLOG RULE</div>
+            <div class="calloutText">Player-visible updates: what changed, what’s fun now, what’s next.</div>
           </div>
         </div>
       </article>
 
-      <!-- MIDDLE: BLOG POSTS -->
+      <!-- MIDDLE -->
       <article class="win">
-        <header class="win__bar">
-          <div class="win__title">DEVLOG — RECENT</div>
-          <div class="win__btns" aria-hidden="true">
-            <span class="wbtn"></span><span class="wbtn"></span><span class="wbtn wbtn--hot"></span>
-          </div>
+        <header class="bar">
+          <div class="barTitle">DEVLOG — RECENT</div>
         </header>
-
-        <div class="win__body">
+        <div class="body">
           <ul class="posts" role="list">
             <li class="post">
-              <a class="post__link" href="blog/posts/2026-01-28-first-devlog.html">
-                <div class="post__top">
-                  <time class="post__date" datetime="2026-01-28">2026-01-28</time>
-                  <span class="post__tag">NEW</span>
+              <a class="postLink" href="blog/posts/2026-01-28-first-devlog.html">
+                <div class="postTop">
+                  <time class="date" datetime="2026-01-28">2026-01-28</time>
+                  <span class="tag tag--hot">NEW</span>
                 </div>
-                <div class="post__title">First devlog: what I’m building</div>
-                <div class="post__excerpt">Quick summary + what’s next. (Add GIF later.)</div>
+                <div class="postTitle">First devlog: what I’m building</div>
+                <div class="postEx">Quick summary + what’s next. (Add GIF later.)</div>
               </a>
             </li>
 
             <li class="post">
-              <a class="post__link" href="#">
-                <div class="post__top">
-                  <time class="post__date" datetime="2026-01-15">2026-01-15</time>
-                  <span class="post__tag post__tag--dim">LOG</span>
+              <a class="postLink" href="#">
+                <div class="postTop">
+                  <time class="date" datetime="2026-01-15">2026-01-15</time>
+                  <span class="tag">LOG</span>
                 </div>
-                <div class="post__title">Enemy roles pass — early notes</div>
-                <div class="post__excerpt">Color coding, silhouettes, and readability at speed.</div>
+                <div class="postTitle">Enemy roles pass — early notes</div>
+                <div class="postEx">Color coding, silhouettes, and readability at speed.</div>
               </a>
             </li>
 
             <li class="post">
-              <a class="post__link" href="#">
-                <div class="post__top">
-                  <time class="post__date" datetime="2026-01-02">2026-01-02</time>
-                  <span class="post__tag post__tag--dim">LOG</span>
+              <a class="postLink" href="#">
+                <div class="postTop">
+                  <time class="date" datetime="2026-01-02">2026-01-02</time>
+                  <span class="tag">LOG</span>
                 </div>
-                <div class="post__title">Movement feel: grapple + kick combo</div>
-                <div class="post__excerpt">What felt heavy, what got snappier, and why.</div>
+                <div class="postTitle">Movement feel: grapple + kick combo</div>
+                <div class="postEx">What felt heavy, what got snappier, and why.</div>
               </a>
             </li>
           </ul>
@@ -135,32 +114,20 @@
         </div>
       </article>
 
-      <!-- RIGHT: LINKS -->
+      <!-- RIGHT -->
       <article class="win" id="links">
-        <header class="win__bar">
-          <div class="win__title">LINKS</div>
-          <div class="win__btns" aria-hidden="true">
-            <span class="wbtn"></span><span class="wbtn"></span><span class="wbtn wbtn--hot"></span>
-          </div>
+        <header class="bar">
+          <div class="barTitle">LINKS</div>
         </header>
-
-        <div class="win__body">
+        <div class="body">
           <div class="links">
-            <a class="linkrow" href="#" target="_blank" rel="noreferrer">
-              <span class="linkrow__k">STEAM</span><span class="linkrow__v">Wishlist / Playtest</span>
-            </a>
-            <a class="linkrow" href="#" target="_blank" rel="noreferrer">
-              <span class="linkrow__k">YOUTUBE</span><span class="linkrow__v">Dev videos</span>
-            </a>
-            <a class="linkrow" href="#" target="_blank" rel="noreferrer">
-              <span class="linkrow__k">BLUESKY</span><span class="linkrow__v">Updates / clips</span>
-            </a>
-            <a class="linkrow" href="#" target="_blank" rel="noreferrer">
-              <span class="linkrow__k">PRESS KIT</span><span class="linkrow__v">Factsheet / screenshots</span>
-            </a>
-            <a class="linkrow" href="#" target="_blank" rel="noreferrer">
-              <span class="linkrow__k">CONTACT</span><span class="linkrow__v">Email (placeholder)</span>
-            </a>
+            <a class="linkRow" href="./"><span class="lk">HOME</span><span class="lv">This page</span></a>
+            <a class="linkRow" href="blog/"><span class="lk">BLOG</span><span class="lv">Archive</span></a>
+            <a class="linkRow" href="#" target="_blank" rel="noreferrer"><span class="lk">STEAM</span><span class="lv">Wishlist / Playtest</span></a>
+            <a class="linkRow" href="#" target="_blank" rel="noreferrer"><span class="lk">YOUTUBE</span><span class="lv">Dev videos</span></a>
+            <a class="linkRow" href="#" target="_blank" rel="noreferrer"><span class="lk">SOCIAL</span><span class="lv">Updates / clips</span></a>
+            <a class="linkRow" href="#" target="_blank" rel="noreferrer"><span class="lk">PRESS KIT</span><span class="lv">Factsheet / screenshots</span></a>
+            <a class="linkRow" href="#" target="_blank" rel="noreferrer"><span class="lk">CONTACT</span><span class="lv">Email (placeholder)</span></a>
           </div>
 
           <div class="hr"></div>
@@ -171,8 +138,8 @@
     </section>
 
     <footer class="foot">
-      <div class="foot__line">© <span data-year></span> Chad Dyer-Essig</div>
-      <div class="foot__line muted">Static files. No framework. No fuss.</div>
+      <div>© <span data-year></span> Chad Dyer-Essig</div>
+      <div class="muted">Static files. No framework. No fuss.</div>
     </footer>
   </main>
 </body>
