@@ -3,54 +3,98 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Devlog — Your Game</title>
-  <meta name="description" content="Devlog posts and progress updates for Your Game." />
-  <link rel="stylesheet" href="/styles.css" />
-  <script defer src="/site.js"></script>
+  <title>CHURN — Devlog</title>
+  <meta name="description" content="CHURN: EXO-TERMINATORS devlog archive." />
+
+  <link rel="stylesheet" href="../styles.css" />
+  <script defer src="../site.js"></script>
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container header-row">
-      <a class="brand" href="/">
-        <span class="brand-mark" aria-hidden="true">◆</span>
-        <span class="brand-text">Your Game</span>
-      </a>
+  <a class="skip" href="#content">Skip to content</a>
 
-      <nav class="nav">
-        <a href="/">Home</a>
-        <a href="/blog/">Devlog</a>
-        <button class="btn btn-ghost btn-icon" type="button" data-theme-toggle aria-label="Toggle theme">
-          <span aria-hidden="true">☾</span>
-        </button>
+  <header class="top">
+    <div class="container top__row">
+      <nav class="top__nav" aria-label="Primary">
+        <a class="top__link" href="../">Home</a>
+        <a class="top__link" href="./">Blog</a>
+        <a class="top__link" href="../#links">Links</a>
       </nav>
+
+      <div class="top__meta">
+        <span class="top__badge">DEVLOG ARCHIVE</span>
+        <span class="top__badge">UPDATED: <span data-updated>—</span></span>
+      </div>
     </div>
   </header>
 
-  <main class="section">
-    <div class="container">
-      <h1 class="page-title">Devlog</h1>
-      <p class="page-subtitle">
-        Short updates about what changed, what I learned, and what’s next.
-      </p>
-
-      <div class="list">
-        <!-- Add new posts by copying this block -->
-        <a class="list-item" href="/blog/posts/2026-01-28-first-devlog.html">
-          <div class="post-meta">
-            <time datetime="2026-01-28">Jan 28, 2026</time>
-            <span class="dot" aria-hidden="true">•</span>
-            <span>3 min</span>
-          </div>
-          <h3>First devlog: what I’m building</h3>
-          <p>A quick summary, a GIF, and what’s next.</p>
-        </a>
+  <main class="container" id="content">
+    <section class="hero" style="padding-top:18px">
+      <div class="hero__logo">
+        <div class="hero__mark" aria-hidden="true"></div>
+        <div class="hero__text">
+          <div class="hero__title" style="font-size:32px">DEVLOG</div>
+          <div class="hero__subtitle">Sorted by recency</div>
+        </div>
       </div>
+      <div class="hero__fine">Static archive. Add new posts by creating HTML files in <span class="muted">blog/posts/</span>.</div>
+    </section>
 
-      <footer class="site-footer">
-        <p class="muted">© <span data-year></span> Your Name.</p>
-      </footer>
-    </div>
+    <article class="win">
+      <header class="win__bar">
+        <div class="win__title">POSTS</div>
+        <div class="win__btns" aria-hidden="true">
+          <span class="wbtn"></span><span class="wbtn"></span><span class="wbtn wbtn--hot"></span>
+        </div>
+      </header>
+
+      <div class="win__body">
+        <ul class="posts" role="list">
+          <li class="post">
+            <a class="post__link" href="posts/2026-01-28-first-devlog.html">
+              <div class="post__top">
+                <time class="post__date" datetime="2026-01-28">2026-01-28</time>
+                <span class="post__tag">NEW</span>
+              </div>
+              <div class="post__title">First devlog: what I’m building</div>
+              <div class="post__excerpt">Quick summary + what’s next.</div>
+            </a>
+          </li>
+
+          <li class="post">
+            <a class="post__link" href="#">
+              <div class="post__top">
+                <time class="post__date" datetime="2026-01-15">2026-01-15</time>
+                <span class="post__tag post__tag--dim">LOG</span>
+              </div>
+              <div class="post__title">Enemy roles pass — early notes</div>
+              <div class="post__excerpt">Color coding, silhouettes, readability.</div>
+            </a>
+          </li>
+
+          <li class="post">
+            <a class="post__link" href="#">
+              <div class="post__top">
+                <time class="post__date" datetime="2026-01-02">2026-01-02</time>
+                <span class="post__tag post__tag--dim">LOG</span>
+              </div>
+              <div class="post__title">Movement feel: grapple + kick combo</div>
+              <div class="post__excerpt">What got snappier, and why.</div>
+            </a>
+          </li>
+        </ul>
+
+        <div class="row">
+          <a class="btn" href="../">BACK TO HOME</a>
+          <a class="btn" href="posts/post-template.html">POST TEMPLATE</a>
+        </div>
+      </div>
+    </article>
+
+    <footer class="foot">
+      <div class="foot__line">© <span data-year></span> Chad Dyer-Essig</div>
+      <div class="foot__line muted">CHURN: EXO-TERMINATORS</div>
+    </footer>
   </main>
 </body>
 </html>
