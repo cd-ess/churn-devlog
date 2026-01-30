@@ -3,83 +3,85 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>First devlog: what I’m building — Your Game</title>
-  <meta name="description" content="First devlog post for Your Game." />
-  <link rel="stylesheet" href="/styles.css" />
-  <script defer src="/site.js"></script>
+  <title>First devlog: what I’m building — CHURN</title>
+  <meta name="description" content="First devlog post for CHURN: EXO-TERMINATORS." />
+
+  <link rel="stylesheet" href="../../styles.css" />
+  <script defer src="../../site.js"></script>
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container header-row">
-      <a class="brand" href="/">
-        <span class="brand-mark" aria-hidden="true">◆</span>
-        <span class="brand-text">Your Game</span>
-      </a>
+  <a class="skip" href="#content">Skip to content</a>
 
-      <nav class="nav">
-        <a href="/blog/">Devlog</a>
-        <a href="/">Home</a>
-        <button class="btn btn-ghost btn-icon" type="button" data-theme-toggle aria-label="Toggle theme">
-          <span aria-hidden="true">☾</span>
-        </button>
+  <header class="top">
+    <div class="container top__row">
+      <nav class="top__nav" aria-label="Primary">
+        <a class="top__link" href="../../">Home</a>
+        <a class="top__link" href="../">Blog</a>
+        <a class="top__link" href="../../#links">Links</a>
       </nav>
+
+      <div class="top__meta">
+        <span class="top__badge">POST</span>
+        <span class="top__badge">UPDATED: <span data-updated>—</span></span>
+      </div>
     </div>
   </header>
 
-  <main class="container">
-    <article class="article">
-      <header>
-        <a class="link" href="/blog/">← Back to Devlog</a>
-        <h1>First devlog: what I’m building</h1>
-        <div class="post-meta">
-          <time datetime="2026-01-28">Jan 28, 2026</time>
-          <span class="dot" aria-hidden="true">•</span>
-          <span>3 min</span>
+  <main class="container" id="content">
+    <section class="hero" style="padding-top:18px">
+      <div class="hero__logo">
+        <div class="hero__mark" aria-hidden="true"></div>
+        <div class="hero__text">
+          <div class="hero__title" style="font-size:30px">DEVLOG ENTRY</div>
+          <div class="hero__subtitle">2026-01-28</div>
+        </div>
+      </div>
+    </section>
+
+    <article class="win">
+      <header class="win__bar">
+        <div class="win__title">FIRST DEVLOG: WHAT I’M BUILDING</div>
+        <div class="win__btns" aria-hidden="true">
+          <span class="wbtn"></span><span class="wbtn"></span><span class="wbtn wbtn--hot"></span>
         </div>
       </header>
 
-      <p>
-        This is where you explain the update in plain English. Keep it player-visible:
-        what’s new, what’s fun, what’s next.
-      </p>
+      <div class="win__body">
+        <p class="muted" style="margin-top:0">
+          <strong>Estimated read:</strong> 3 minutes · <strong>Tags:</strong> overview, direction
+        </p>
 
-      <p>
-        <strong>What changed:</strong> I built the first playable loop and started dialing in the feel.
-      </p>
+        <div class="hr"></div>
 
-      <p>
-        <strong>What I learned:</strong> Small, shippable goals beat giant “perfect” goals.
-      </p>
+        <p>
+          This is the “official-ish” home base for <strong>CHURN: EXO-TERMINATORS</strong>.
+          You play as a disposable clone deployed through a portal to cleanse a hostile other-realm.
+          The goal is <em>fast, punchy combat</em> with big personality.
+        </p>
 
-      <p>
-        <strong>What’s next:</strong> Enemy roles + one new arena.
-      </p>
+        <p>
+          I’m keeping devlogs player-visible: what changed, what’s fun now, what’s next.
+          If something doesn’t make the game more fun, it doesn’t ship.
+        </p>
 
-      <hr style="border-color: rgba(255,255,255,0.12); opacity: 0.7;">
+        <div class="callout">
+          <div class="callout__title">NEXT</div>
+          <div class="callout__text">
+            Enemy roles pass (silhouettes + readability) and tightening the run loop.
+          </div>
+        </div>
 
-      <h2>Media</h2>
-      <p class="muted">Tip: use an animated GIF or a short MP4 (compressed) for devlog impact.</p>
-
-      <!-- Replace with your image/video -->
-      <div class="card">
-        <div class="card-body">
-          <p class="muted" style="margin:0;">
-            Drop a screenshot in <code>/assets/</code> and link it like:
-            <code>&lt;img src="/assets/screenshot-1.png" alt="..." /&gt;</code>
-          </p>
+        <div class="row">
+          <a class="btn" href="../">BACK TO ARCHIVE</a>
+          <a class="btn btn--primary" href="../../">HOME</a>
         </div>
       </div>
-
-      <h2>Notes</h2>
-      <pre><code>// Code blocks look decent by default.
-- Add posts by copying post-template.html
-- Link them from /blog/index.html and optionally /index.html
-</code></pre>
     </article>
 
-    <footer class="site-footer">
-      <p class="muted">© <span data-year></span> Your Name.</p>
+    <footer class="foot">
+      <div class="foot__line">© <span data-year></span> Chad Dyer-Essig</div>
+      <div class="foot__line muted">CHURN: EXO-TERMINATORS</div>
     </footer>
   </main>
 </body>
