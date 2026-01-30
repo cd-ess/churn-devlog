@@ -3,54 +3,83 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>POST TITLE — Your Game</title>
-  <meta name="description" content="Devlog post for Your Game." />
-  <link rel="stylesheet" href="/styles.css" />
-  <script defer src="/site.js"></script>
+  <title>[POST TITLE] — CHURN</title>
+  <meta name="description" content="[SHORT DESCRIPTION]" />
+
+  <link rel="stylesheet" href="../../styles.css" />
+  <script defer src="../../site.js"></script>
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container header-row">
-      <a class="brand" href="/">
-        <span class="brand-mark" aria-hidden="true">◆</span>
-        <span class="brand-text">Your Game</span>
-      </a>
-      <nav class="nav">
-        <a href="/blog/">Devlog</a>
-        <a href="/">Home</a>
-        <button class="btn btn-ghost btn-icon" type="button" data-theme-toggle aria-label="Toggle theme">
-          <span aria-hidden="true">☾</span>
-        </button>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <header class="top">
+    <div class="container top__row">
+      <nav class="top__nav" aria-label="Primary">
+        <a class="top__link" href="../../">Home</a>
+        <a class="top__link" href="../">Blog</a>
+        <a class="top__link" href="../../#links">Links</a>
       </nav>
+
+      <div class="top__meta">
+        <span class="top__badge">POST</span>
+        <span class="top__badge">UPDATED: <span data-updated>—</span></span>
+      </div>
     </div>
   </header>
 
-  <main class="container">
-    <article class="article">
-      <header>
-        <a class="link" href="/blog/">← Back to Devlog</a>
-        <h1>POST TITLE</h1>
-        <div class="post-meta">
-          <time datetime="YYYY-MM-DD">Month DD, YYYY</time>
-          <span class="dot" aria-hidden="true">•</span>
-          <span>X min</span>
+  <main class="container" id="content">
+    <section class="hero" style="padding-top:18px">
+      <div class="hero__logo">
+        <div class="hero__mark" aria-hidden="true"></div>
+        <div class="hero__text">
+          <div class="hero__title" style="font-size:30px">DEVLOG ENTRY</div>
+          <div class="hero__subtitle">[YYYY-MM-DD]</div>
+        </div>
+      </div>
+    </section>
+
+    <article class="win">
+      <header class="win__bar">
+        <div class="win__title">[POST TITLE]</div>
+        <div class="win__btns" aria-hidden="true">
+          <span class="wbtn"></span><span class="wbtn"></span><span class="wbtn wbtn--hot"></span>
         </div>
       </header>
 
-      <p><strong>What changed:</strong> …</p>
-      <p><strong>What I learned:</strong> …</p>
-      <p><strong>What’s next:</strong> …</p>
+      <div class="win__body">
+        <p class="muted" style="margin-top:0">
+          <strong>Estimated read:</strong> [X] minutes · <strong>Tags:</strong> [tag1, tag2]
+        </p>
 
-      <h2>Media</h2>
-      <p class="muted">Add a screenshot/GIF/short MP4 here.</p>
+        <div class="hr"></div>
 
-      <h2>Notes</h2>
-      <p>Optional: keep it short and readable.</p>
+        <p>
+          [Opening paragraph. What changed? What’s fun now? What’s next?]
+        </p>
+
+        <h3 style="margin:14px 0 6px; letter-spacing:.5px; text-transform:uppercase; font-size:13px;">What Changed</h3>
+        <ul style="margin-top:0; color: var(--muted);">
+          <li>[Bullet]</li>
+          <li>[Bullet]</li>
+        </ul>
+
+        <h3 style="margin:14px 0 6px; letter-spacing:.5px; text-transform:uppercase; font-size:13px;">What’s Next</h3>
+        <ul style="margin-top:0; color: var(--muted);">
+          <li>[Bullet]</li>
+          <li>[Bullet]</li>
+        </ul>
+
+        <div class="row">
+          <a class="btn" href="../">BACK TO ARCHIVE</a>
+          <a class="btn btn--primary" href="../../">HOME</a>
+        </div>
+      </div>
     </article>
 
-    <footer class="site-footer">
-      <p class="muted">© <span data-year></span> Your Name.</p>
+    <footer class="foot">
+      <div class="foot__line">© <span data-year></span> Chad Dyer-Essig</div>
+      <div class="foot__line muted">CHURN: EXO-TERMINATORS</div>
     </footer>
   </main>
 </body>
